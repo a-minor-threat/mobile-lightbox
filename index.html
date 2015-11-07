@@ -22,16 +22,22 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 			<script type="text/javascript">
 			    $(document).ready(function() {
-					$(".fancybox")
-					    .attr('rel', 'gallery')
-					    .fancybox({
-					        openEffect  : 'none',
-					        closeEffect : 'none',
-					        nextEffect  : 'none',
-					        prevEffect  : 'none',
-					        padding     : 0,
-					        margin      : [20, 60, 20, 60] // Increase left/right margin
-					    });
+
+
+						$(".fancybox")
+						    .attr('rel', 'gallery')
+						    .fancybox({
+						        openEffect  : 'none',
+						        closeEffect : 'none',
+						        nextEffect  : 'none',
+						        prevEffect  : 'none',
+						        padding     : 0,
+						        margin      : [20, 60, 20, 60] // Increase left/right margin
+						    });
+
+						    $(".fancybox").trigger('click');
+										
+
 			    });
 
 
@@ -44,6 +50,6 @@
 
         <!-- Add your site or application content here -->
 <!--		<button class="btn btn-success btn-lg mrb50" data-iframe="true" id="open-website" data-src="http://www.w3schools.com/">Open website</button> -->
-			<a href="https://www.supporterfeedback.org/a/TakeSurvey?id=3203295" class="fancybox fancybox.iframe">Open bing.com in an iframe</a>
+			<a href="http://www.supporterfeedback.org/a/TakeSurvey?id=3203295" class="fancybox fancybox.iframe" id="iframe"></a>
     </body>
 </html>
