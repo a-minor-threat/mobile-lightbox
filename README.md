@@ -1,2 +1,2 @@
 # mobile-lightbox
-Playing with lightGallery
+Playing with fancybox.
