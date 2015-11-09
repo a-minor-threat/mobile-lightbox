@@ -45,13 +45,34 @@
 
 						//     $(".fancybox").trigger('click');
 			
-			    $('.iframe-popup-link').magnificPopup({
-					  type: 'iframe'
-					});
-			    });
+			  //   $('.iframe-popup-link').magnificPopup({
+					//   type: 'iframe'
+					// });
+			  //   });
+
+			$('.iframe-popup-link').magnificPopup({
+			   type: 'iframe',
+			   iframe: {
+			       markup: '<div class="mfp-iframe-scaler your-special-css-class">'+
+			                        '<div class="mfp-close"></div>'+
+			                        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen>            </iframe>'+
+			                    '</div>'
+			   }   
+
+			});
 
 
 			</script>
+
+	<style type="text/css">
+	.your-special-css-class {
+	    max-width: 320px !important;
+	    height: 85%;
+	    margin: auto;
+	    max-height: 780px;
+	    padding: 140% 16px 0 13px !important;
+	}
+	</style>			
     </head>
     <body>
         <!--[if lt IE 7]>
